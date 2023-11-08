@@ -1,5 +1,7 @@
+## Portuguese
 # Full Stack Project 
 Repositório dedicado ao Full Stack Developer Internship aplication of Longlifenutri
+
 
 ## Funcionalidades
 Pesquisa: Os usuários podem pesquisar produtos utilizando uma palavra-chave. O input de pesquisa é sanitizado para impedir entradas vazias.
@@ -22,7 +24,7 @@ Back-end: Node.js, Express, Axios e Cheerio.
 
 ## Instalação
 
-Instalação das dependencias necessárias:
+Necessidade dos seguintes programas e suas versões instalados:
 
 GIT: v2.42.0
 
@@ -40,4 +42,46 @@ Instruções sobre como clonar o repositório e rodar o projeto localmente:
 
 4. `node src/app.js` 
 
-## Instruções adicionais de instalação
+_________________________________________________________________________________________________________________________________________________________________
+## English
+# Full Stack Project
+Repository dedicated to the Full Stack Developer Internship application for Longlifenutri
+
+## Features
+Search: Users can search for products using a keyword. The search input is sanitized to prevent empty entries.
+
+Search API: An API call is made to the server, passing the search keyword as a parameter.
+
+Display of Results: The search results are displayed on the page, where each product is listed with its image, title, rating, and number of reviews.
+
+## How to Use
+Type a keyword into the search bar.
+
+Click 'Search' to initiate the search.
+
+View the results that dynamically appear below the search bar.
+
+## Technologies Used
+Front-end: HTML, CSS, JavaScript.
+
+Back-end: Node.js, Express, Axios, and Cheerio.
+
+## Installation
+
+The need for the following programs and their versions installed:
+
+GIT: v2.42.0
+
+Node: v21.1.0
+
+VisualStudioCode: v1.84.1
+
+## Instructions on how to clone the repository and run the project locally:
+
+1. `git clone https://github.com/mrodrigues14/full_stack_project.git`
+
+2. `cd [Nome do diretório do projeto]`
+
+3. `npm install`
+
+4. `node src/app.js` 
