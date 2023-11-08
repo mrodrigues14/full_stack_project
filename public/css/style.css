@@ -1,13 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+body{
+    margin: auto;
+    background: #f4f4f4;
+}
+
+header{
+    background: #f4f4f4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+}
+
+.line{
+    color: #ffbb00;
+    background-color: #ffbb00;
+}
+.intro-banner{
+    background-image: url(image5.png);
+    background-size: 100%;
+    margin: auto;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .search-container {
-    max-width: 500px;
-    margin: auto;
+    width: 500px;
+    margin: 0px;
     text-align: center;
-    padding: 20px;
+    padding: 0.8rem;
+
+}
+
+.title {
+    text-align: center;
+    margin: auto;
+    padding: 0.7rem;
+    display: flex;
 }
 
 #searchInput {
@@ -15,24 +50,127 @@ body {
     padding: 10px;
     margin-right: 10px;
     font-size: 16px;
+    border-style: solid;
+    border-radius: 0.5rem ;
 }
 
 #searchButton {
     width: 20%;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: #ffbb00;
+    color: black;
     border: none;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    font-weight: bolder;
 }
 
 #searchButton:hover {
-    background-color: #0056b3;
+    background-color: #ffae00;
 }
 
 #results {
-    max-width: 500px;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 23px;
     margin-top: 20px;
+}
+
+.product {
+    flex: 0 1 calc(20% - 10px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.product img {
+    width: 150px; 
+    height: 150px;
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto 10px; 
+    border-radius: 5px; 
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+.product-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    height: 4em;
+    transition: height 0.3s ease;
+}
+
+.product-description.expanded {
+    height: auto; 
+}
+
+
+.show-more {
+    color: black;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border-width: 0.5px;
+    background-color:#ffd300;
+}
+
+.typewriter {
+    border-right: .15em solid black;
+    white-space: nowrap;
+    overflow: hidden; 
+    margin: 0 auto;
+    max-width: 37rem;
+    animation: typing 4.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% } 
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .product {
+        flex: 0 1 calc(25% - 10px);
+    }
+}
+
+@media (max-width: 992px) {
+    .product {
+        flex: 0 1 calc(33.333% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .product {
+        flex: 0 1 calc(100% - 10px);
+    }
 }
