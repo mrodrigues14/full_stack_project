@@ -2,6 +2,7 @@
 # Full Stack Project 
 Repositório dedicado ao Full Stack Developer Internship aplication of Longlifenutri
 
+<img src="Preview.gif">
 
 ## Funcionalidades
 Pesquisa: Os usuários podem pesquisar produtos utilizando uma palavra-chave. O input de pesquisa é sanitizado para impedir entradas vazias.
@@ -46,6 +47,8 @@ ________________________________________________________________________________
 ## English
 # Full Stack Project
 Repository dedicated to the Full Stack Developer Internship application for Longlifenutri
+
+<img src="Preview.gif">
 
 ## Features
 Search: Users can search for products using a keyword. The search input is sanitized to prevent empty entries.
